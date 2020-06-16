@@ -1,0 +1,247 @@
+
+.layout{
+    display:flex;
+    flex-direction: column;
+}
+
+.botao-doar{
+    width: 5em;
+    height: 4.5em;
+    right: 0.2em;
+    bottom: 15em;
+    float: left;
+    position: fixed;
+    font-size: 1.5em;
+    text-align: center;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 0.1em;
+    line-height: 1px;
+    background-color: #3e5aae;
+    color: white;
+    z-index: 1;
+}
+.botao-doar:hover, .active{
+    color: white !important;
+    border-width: 0.2em;
+}
+.img_doar{
+    width: 60px; 
+    height: 60px;
+    margin-top: 5%;
+}
+.doar{
+    border-color: white !important; 
+    border-radius: 1em !important;
+    margin-top: 3%;
+    width: 9em !important; 
+    height: 3em !important;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(44, 44, 44, 0.911);
+    height: 6.2em;  
+    width: 100%;
+}
+
+footer{
+    background-color: rgba(44, 44, 44, 0.911);
+    color: #8cc63f;
+}
+
+.logo img{
+    display: flex;
+    width: 15em;
+    height: auto;
+    align-items: center;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+.menu ul li{
+    transition: background-color 2s linear;
+    border: solid 1px transparent;
+}
+.menu a{
+    position: relative;
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: #e3e3e1;
+    font-size: 1.5em;
+}
+
+a{
+    text-decoration: none !important;
+    color: rgb(212, 211, 211);
+}
+
+a:hover, .active{
+    color: #3e5aae !important;
+}
+.doar:hover, .active{
+    border-color: #3e5aae !important;
+}
+
+
+.button {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 100%;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 7pt;
+}
+
+.button2:hover {
+    box-shadow: 0 7px 10px 0 rgba(0,0,0,0.24);
+}
+
+
+section{
+    display: flex;
+    min-height: calc(100vh - 200px);
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;
+    background-color: #e3e3e1;
+}
+
+.conteudo {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.conteudo > .texto {
+    display: flex;
+    padding: 0.5em;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    width: 35rem;
+    height: auto;
+    margin: 6px;
+    text-align: justify;
+    line-height: 130%;
+    font-size: 1.5em;
+    border: 2px solid rgba(43, 43, 43, 0.932);
+    border-radius: 7pt;
+}
+
+.conteudo > .texto > img{
+    border-radius: 0.5em;
+    width: 100%;
+    height: 50%;
+}
+
+.conteudo button{
+    width: 10em !important;
+    height: 3em !important;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: rgba(43, 43, 43, 0.932);
+    color: white;
+    text-align: center;
+}
+
+.text-footer{
+    text-align: center;
+    color: #e3e3e1;
+}
+
+@media(max-width: 800px) {
+    .doar{
+        margin-left: 38%;
+    }
+    .botao-doar{
+        bottom: 30em;
+    }
+    header{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 5%;
+    }
+    .logo img{
+        margin-left: 0%;
+    }
+    .menu{
+        justify-content: center;
+    }
+    ul{
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+    }
+    ul li a{ 
+        width: 100%;
+        box-sizing: border-box;
+    }
+    a{
+        font-size: 150%;
+    }
+    .button{
+        font-size: 130%;
+    }
+    .conteudo > .texto {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 85%;
+        height: auto;
+        margin: 6px;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        line-height: 150%;
+        font-size: 150%;
+        border-radius: 7pt;
+    }
+}
+@media(max-width: 500px) {
+    .doar{
+        margin-left: 25%;
+    }
+    .doar_text{
+        display: none;
+    }
+    .botao-doar{
+        width: 4em;
+        height: 3.5em;
+        bottom: 7em;
+    }
+    .img_doar{
+        width: 50px; 
+        height: 50px;
+        margin-top: 19%;
+    }
+}

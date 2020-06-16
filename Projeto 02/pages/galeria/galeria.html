@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='./galeria.css'>
+    <title>Projeto Final</title>
+</head>
+
+<body>
+    <div class="layout">
+
+        <a class="botao-doar" href="../doacoes/doacaoes.html">
+            <div>
+                <img src="../../img/doar.png" class="img_doar">
+                 <p class="doar_text">Doar</p>
+            </div>
+        </a>
+
+        <header>
+            <div class="logo">
+                <img src="../../img/logo.png" >
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="../../index.html">Quem Somos</a></li>
+                    <li><a href="../projetos/projetos.html">Projeto</a></li>
+                    <li><a href="../galeria/galeria.html">Galeria</a></li>
+                    <li class="doar"><a href="../doacoes/doacaoes.html" style="margin-top: -10%;">Doar</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section><!-- code aqui-->
+            <ul>
+                <li><a href="#img1"><img src="../../img/computação.jpg" class="min"></a></li>
+                <li><a href="#img2"><img src="../../img/festa.jpg" class="min"></a></li>
+                <li><a href="#img3"><img src="../../img/leituraFeliz.jpg" class="min"></a></li>
+                <li><a href="#img4"><img src="../../img/QuemSomos.jpg" class="min"></a></li>
+            </ul>
+
+            <div class="lbox" id="img1">
+                <div class="box_img">
+                    <a href="" class="btn_slide" id="close">X</a>
+                    <img src="../../img/computação.jpg">
+                    <a href="#img2" class="btn_slide" id="next">&#187;</a>
+                </div>
+            </div>
+
+            <div class="lbox" id="img2">
+                <div class="box_img">
+                    <a href="#img1" class="btn_slide" id="prev">&#171;</a>
+                    <a href="" class="btn_slide" id="close">X</a>
+                    <img src="../../img/festa.jpg">
+                    <a href="#img3" class="btn_slide" id="next">&#187;</a>
+                </div>
+            </div>
+
+            <div class="lbox" id="img3">
+                <div class="box_img">
+                    <a href="#img2" class="btn_slide" id="prev">&#171;</a>
+                    <a href="" class="btn_slide" id="close">X</a>
+                    <img src="../../img/leituraFeliz.jpg">
+                    <a href="#img4" class="btn_slide" id="next">&#187;</a>
+                </div>
+            </div>
+
+            <div class="lbox" id="img4">
+                <div class="box_img">
+                    <a href="#img3" class="btn_slide" id="prev">&#171;</a>
+                    <a href="" class="btn_slide" id="close">X</a>
+                    <img src="../../img/QuemSomos.jpg">
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <div class="text-footer">
+                <img src="../../img/logo.png" width="200em" height="auto" style="margin-top: 1%;">
+                <p>@GleydsonMaciel / @LucasDeAraujo - LCC 2017.1 </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
